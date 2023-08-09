@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: rgb(60, 65, 45);
+    ;
+}
+
+.d-body{
+    background-color: rgb(60, 65, 45);
+    border: 0;
+    /* display: none; */
+}
+
+/* scrollbar styling */
+.home::-webkit-scrollbar {
+    width: 0 !important
+}
+
+/* Search Field */
+.search {
+    border-radius: 20px;
+    height: 6cqh;
+    border: 0;
+    font-size: x-large;
+    text-align: center;
+
+
+}
+
+/* Media query */
+@media only screen and (max-width: 770px) {
+    .home {
+        height: auto;
+
+    }
+}
+
+/* for the NavBar */
+nav {
+    background: rgb(11, 2, 1);
+    background: linear-gradient(90deg, rgba(11, 2, 1, 1) 6%, rgba(33, 10, 0, 1) 100%);
+}
+
+/* for the Footer */
+#n-nav1 {
+    background-image: url('https://cdn.britannica.com/08/177308-050-94D9D6BE/Food-Pizza-Basil-Tomato.jpg');
+    background-size: cover;
+    display: none;
+}
+
+/* for the Favorite Container */
+.offcanvas{
+    background-color: rgb(60, 65, 45);
+}
+
+/* footer body Container */
+.overlay {
+    background: rgb(11, 2, 1);
+    background: linear-gradient(90deg, rgba(11, 2, 1, 1) 6%, rgba(33, 10, 0, 1) 100%);
+}
+
+/* Toaste Header */
+.toast-header{
+    background-color: blueviolet;
+}
+
+/* Toaste Body */
+.toast-body{
+    color: rgb(7, 227, 7);font-size:large;
+}
