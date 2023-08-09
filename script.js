@@ -298,11 +298,6 @@ async function showFavorite() {
   document.getElementById('favorite').innerHTML = html;
 }
 
-// Return Meals Accoroding to input Name
-async function fetchDataMarbal(url) {
-  const response = await fetch(`${url}`);
-  const meals = await response.json();
-  return meals;
-}
+
 
 
