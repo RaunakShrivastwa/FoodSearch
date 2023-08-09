@@ -5,12 +5,12 @@ if (localStorage.getItem("favouritesList") == null) {
   localStorage.setItem("favouritesList", JSON.stringify([]));
 }
 
-// for the Total Favorite Count
-var count = 0;
+// for the Total Favorite Favorite_item_Count
+var Favorite_item_count = 0;
 
 // for the Favorite Button
 if (localStorage.getItem("incr1") == null) {
-  localStorage.setItem("incr1", count);
+  localStorage.setItem("incr1", Favorite_item_count);
 } else {
   const data = document.getElementById('val');
   const temp = localStorage.getItem("incr1");
@@ -18,7 +18,7 @@ if (localStorage.getItem("incr1") == null) {
 
 }
 
-// Add Favorite Count
+// Add Favorite Favorite_item_Count
 function load() {
   const data = document.getElementById('val');
   let temp = localStorage.getItem("incr1");
@@ -27,7 +27,7 @@ function load() {
   localStorage.setItem("incr1", temp);
 }
 
-// Remove Favorite Count
+// Remove Favorite Favorite_item_Count
 function dLoad() {
   const data = document.getElementById('val');
   let temp = localStorage.getItem("incr1");
