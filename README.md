@@ -1,4 +1,4 @@
-About the Project :-
+![image](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/77b5ed4e-caa9-4de4-8a8f-0abe20ad8668)About the Project :-
 
 🔴 This is a single page website where you can seach about any meal.
 
@@ -8,22 +8,19 @@ About the Project :-
 
 🔴 It also redirects users to a youtube videos for the recipe of dishes.
 
-💻 Screenshots 1 :-
-![image](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/6f085c5b-1fae-4718-be19-dee76a2f1de1)
+💻 Screenshots 1 :-![WhatsApp Image 2023-08-09 at 00 46 14](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/b4057eef-b0c1-44f2-b7d2-28e5281f60b0)
 
-💻 Screenshots 2 :-
-   ![image](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/9dc66f4a-803c-4345-a380-52ee23f73adb)
+💻 Screenshots 2 :- ![WhatsApp Image 2023-08-09 at 00 48 11](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/c71bf186-4a99-4214-88f9-d0aff85eaa39)
 
-💻 Screenshots 3 :- ![Web capture_6-8-2023_9237_127 0 0 1](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/cfe482a6-cb16-48c2-8808-63850ff8f4eb)
+💻 Screenshots 3 :- ![WhatsApp Image 2023-08-09 at 00 49 23](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/c748e4dd-f858-4b63-92ac-4597f18b928f)
 
-💻 Screenshots 4 :-  ![image](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/26a98d6f-3756-48d3-9683-d6c08a3d3f73)
+💻 Screenshots 4 :- ![WhatsApp Image 2023-08-09 at 00 50 32](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/c2a0cf2f-4f29-46dd-ade3-fb86c1d48649)
 
-💻 Screenshots 5 :- ![image](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/a37bf9ee-dd2d-4c8f-a63f-3684d54601e1)
+💻 Screenshots 5 :- ![WhatsApp Image 2023-08-09 at 00 56 12](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/571808e2-aaea-476c-a9a9-0b6dbf129876)
 
-📱📱Responsive
-💻 Screenshots 1 :-  ![Web capture_6-8-2023_9103_127 0 0 1](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/52077ff6-a747-4468-bb0b-56cce1668239)
+💻 Screenshots 5 :- ![image](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/e91566f2-33b6-4780-85d5-fbbaf5846e06)
 
-💻 Screenshots 2 :- ![Web capture_6-8-2023_91114_127 0 0 1](https://github.com/RaunakShrivastwa/MealApp/assets/121729066/e723e32b-25cc-4445-a14a-6958b9d69472)
+
 
 
   Deploy Link:-   https://ninjas-meals.netlify.app/
