@@ -1,4 +1,4 @@
-![image](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/77b5ed4e-caa9-4de4-8a8f-0abe20ad8668)About the Project :-
+About the Project :-
 
 🔴 This is a single page website where you can seach about any meal.
 
@@ -23,7 +23,7 @@
 
 
 
-  Deploy Link:-   https://ninjas-meals.netlify.app/
+  Deploy Link:-   https://food-search1.netlify.app/
   
 
   
