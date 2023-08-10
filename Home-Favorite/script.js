@@ -5,6 +5,11 @@ if (localStorage.getItem("favouritesList") == null) {
   localStorage.setItem("favouritesList", JSON.stringify([]));
 }
 
+if (localStorage.getItem("details") == null) {
+  localStorage.setItem("details", JSON.stringify([]));
+}
+
+
 // for the Total Favorite Favorite_item_Count
 var Favorite_item_count = 0;
 
@@ -86,48 +91,48 @@ function showMealList() {
         }
         if (isFav) {
           html += `
-                  <div class="col">
-                  <div class="card">
-                    <img src="${element.strMealThumb}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <h5 class="card-title">${element.strMeal}</h5>
-                        <h6 class="card-title">${element.strCategory}</h6>
-                 </div>
-                       <div class="d-flex justify-content-between mt-3">
-                       <a href="#dd">
-                       <p><Button onclick="showDetails(${element.idMeal})" class="btn btn-outline-dark">Details</Button></p>
-                       </a>                          <p>
-                            <img id="main${element.idMeal}" onclick="addRemoveToFavList(${element.idMeal})" title="Click To Remove From Favorite" width="30px" src="https://cdn-icons-png.flaticon.com/128/2589/2589175.png" alt="">
-                          </p>
-                       </div>
-                    </div>
-                  </div>
-                  
-                </div>
+          <div class="col">
+          <div class="card">
+            <img src="${element.strMealThumb}" class="card-img-top" alt="..."  onclick="sendDetails1(${element.idMeal})" style="cursor:pointer;"
+            title="Click to See more Information">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">${element.strMeal}</h5>
+                <h6 class="card-title">${element.strCategory}</h6>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <p><Button onclick="sendDetails1(${element.idMeal})" class="btn btn-outline-dark">Details</Button></p>
+                <img style="cursor:pointer" id="main${element.idMeal}" onclick="addRemoveToFavList(${element.idMeal})"
+                  title="Click To Remove From Favorite" width="30px" height="40px"
+                  src="https://cdn-icons-png.flaticon.com/128/2589/2589175.png" alt="">
+              </div>
+            </div>
+          </div>
+      
+        </div>
               `;
         } else {
           var c = element.strCategory;
           html += `
-                  <div class="col">
-                  <div class="card">
-                    <img src="${element.strMealThumb}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                          <h5 class="card-title">${element.strMeal}</h5>
-                          <h6 class="card-title">${element.strCategory}</h6>
-                       </div>
-                       <div class="d-flex justify-content-between mt-3">
-                          <a href="#dd">
-                          <p><Button onclick="showDetails(${element.idMeal})" class="btn btn-outline-dark">Details</Button></p>
-                          </a>
-                          <p>
-                            <img  id="main${element.idMeal}" onclick="addRemoveToFavList(${element.idMeal})" width="30px" src="https://cdn-icons-png.flaticon.com/128/2961/2961957.png" alt="">
-                          </p>
-                       </div>
-                    </div>
-                  </div>
-                </div>
+          <div class="col">
+          <div class="card">
+            <img src="${element.strMealThumb}" class="card-img-top" alt="..." onclick="sendDetails1(${element.idMeal})"
+              style="cursor:pointer;" title="Click to See more Information">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">${element.strMeal}</h5>
+                <h6 class="card-title">${element.strCategory}</h6>
+              </div>
+              <div class="d-flex justify-content-between mt-3">
+                <p><Button onclick="sendDetails1(${element.idMeal})" class="btn btn-outline-dark">Details</Button></p>
+                <img style="cursor:pointer" id="main${element.idMeal}" onclick="addRemoveToFavList(${element.idMeal})"
+                  title="Click to add Your Favorite" width="30px" height="30px"
+                  src="https://cdn-icons-png.flaticon.com/128/2961/2961957.png" alt="">
+              </div>
+            </div>
+          </div>
+      
+        </div>
               `;
         }
       });
@@ -149,56 +154,6 @@ function showMealList() {
     document.getElementById('n-nav1').style = "display:block"
   });
 
-
-}
-
-// Show Details
-function showDetails(id) {
-  html = "";
-  document.getElementById("d-details").style = "display:block"
-
-  document.getElementById('d-container').style = "display:block !important"
-  const url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
-  fetchMealsFromApi(url, id).then(data => {
-    data.meals.forEach(element => {
-      html += `
-      <div class="card mb-3" id="dd" style="max-width:100%;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img  src="${element.strMealThumb}" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">${element.strMeal}</h5>
-           
-            <p class="card-text"><span class="text-danger" style="font-style:bold">INSTRUCTION:- </span> &nbsp;${element.strInstructions}</p>
-             
-            <div class="d-flex col-md-12 col-sm-12 justify-content-around align-items-end p-3">
-                  <div class="col-md-4">
-                      <h6>${element.strCategory}</h6>
-                  </div>
-
-                  <div class="col-md-4">
-                     <h6> ${element.strArea}</h6>
-                  </div>
-
-                  <div class="col-md-4">
-                     <h6>${element.strMeasure1}</h6>
-                  </div>
-            </div>
-
-            <video class="w-100" controls>
-                <source src="${element.strYoutube}" type="video/mp4" />
-            </video>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  `;
-      document.getElementById("d-details").innerHTML = html;
-    })
-  })
 
 }
 
@@ -244,7 +199,7 @@ function Remove_notification() {
   toast.show();
 }
 
-// Show Favorite Meal List
+// Show Favorite 
 async function showFavorite() {
   console.log("running")
   let arr = JSON.parse(localStorage.getItem("favouritesList"));
@@ -273,7 +228,7 @@ async function showFavorite() {
           html += `
           <div class="col mt-3">
           <div class="card">
-            <img src="${element.strMealThumb}" class="card-img-top" alt="...">
+            <img onclick="sendDetails1(${element.idMeal})" style="cursor:pointer;" title="Click to see more Information" src="${element.strMealThumb}" class="card-img-top" alt="...">
             <div class="card-body">
                <div class="d-flex justify-content-between">
                   <h5 class="card-title">${element.strMeal}</h5>
@@ -281,7 +236,7 @@ async function showFavorite() {
                </div>
                <div class="d-flex justify-content-between mt-3">
                <a href="#dd">
-               <p><Button onclick="showDetails(${element.idMeal})" class="btn btn-outline-dark">Details</Button></p>
+               <p><Button onclick="sendDetails1(${element.idMeal})" class="btn btn-outline-dark">Details</Button></p>
                </a>
                   <p>
                   <img id="main${element.idMeal}" onclick="addRemoveToFavListFromFavorite(${element.idMeal})" title="Click To Remove From Favorite" width="30px" src="https://cdn-icons-png.flaticon.com/128/2589/2589175.png" alt="">
@@ -296,6 +251,13 @@ async function showFavorite() {
     }
   }
   document.getElementById('favorite').innerHTML = html;
+}
+
+// for the Details of Meals
+function sendDetails1(id) {
+  localStorage.removeItem("details");
+  localStorage.setItem("details", id)
+  window.location.href = "../Details/details.html"
 }
 
 
