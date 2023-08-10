@@ -1,7 +1,5 @@
 About the Project :-
 
-🔴 This is a single page website where you can seach about any meal.
-
 🔴 You can also add it into on your favourite list.
 
 🔴 The most important thing about this project it is fully responsive of nature and use an api called the themealdb to fetch all the dishes.
@@ -18,12 +16,13 @@ About the Project :-
 
 💻 Screenshots 5 :- ![WhatsApp Image 2023-08-09 at 00 56 12](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/571808e2-aaea-476c-a9a9-0b6dbf129876)
 
-💻 Screenshots 5 :- ![image](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/e91566f2-33b6-4780-85d5-fbbaf5846e06)
+💻 Screenshots 5 :- ![WhatsApp Image 2023-08-10 at 11 19 45](https://github.com/RaunakShrivastwa/FoodSearch/assets/121729066/de7bb7bd-ec12-4350-a6a4-6857e9f5eec2)
 
 
 
 
-  Deploy Link:-   https://food-search1.netlify.app/
+
+  Deploy Link:- https://ninjas-meals-app.netlify.app/
   
 
   
